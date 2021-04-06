@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!--suppress ALL-->
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>编号</td>
+            <td>名字</td>
+            <td>性别</td>
+            <td>电话</td>
+            <td>邮箱</td>
+        </tr>
+
+        <tr th:each="e:${list}">
+            <td th:text="${e.eid}">编号</td>
+            <td th:text="${e.ename}">名字</td>
+            <td th:text="${e.esex}">性别</td>
+            <td th:text="${e.etel}">电话</td>
+            <td th:text="${e.eemail}">邮箱</td>
+        </tr>
+    </table>
+</body>
+<html>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--这是t_emp表的映射文件-->
+<!--一个表对应一个映射文件-->
+<!--namespace指定dao接口，让映射文件和dao一一对应-->
+<mapper namespace="com.cm.dao.IEmpDao">
+    <resultMap id="empmapper" type="com.cm.entity.emp">
+        <result column="eid" property="eid"></result>
+        <result column="ename" property="ename"></result>
+        <result column="esex" property="esex"></result>
+        <result column="etel" property="etel"></result>
+        <result column="eemail" property="eemail"></result>
+    </resultMap>
+
+</mapper>
